@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERM", "ERM\ERM.csproj", "{725F8164-AE31-4E0E-BD84-699723F7204B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{725F8164-AE31-4E0E-BD84-699723F7204B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725F8164-AE31-4E0E-BD84-699723F7204B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725F8164-AE31-4E0E-BD84-699723F7204B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725F8164-AE31-4E0E-BD84-699723F7204B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A47FB258-3AF3-4E72-B22E-B69B2465C783}
+	EndGlobalSection
+EndGlobal
