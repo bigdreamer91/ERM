@@ -1,0 +1,43 @@
+﻿@model ClockInOutDTO
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="my-2">
+    <lable>@Model.EmployeeName</lable><br/>
+</div>
+<div class="my-2">
+    <label>@Model.CurrentDate.ToShortDateString()</label><br />
+</div>
+@if (!Model.EmployeeClockInClockOut.ClockedIn)
+{
+    <div class="my-2">
+        <form asp-action="ClockIn" asp-route-empId="@Model.EmployeeClockInClockOut.EmployeeId" asp-route-currentDate="@Model.CurrentDate.ToShortDateString()" enctype="multipart/form-data">
+            <button type="submit" class="btn btn-info">Clock In</button>
+        </form>
+    </div>
+
+}
+
+@if (Model.EmployeeClockInClockOut.ClockedIn)
+{
+    <div class="my-2">      
+        <table>
+            <tr>
+                <td>Clocked in at : @Model.EmployeeClockInClockOut.ClockInTime.ToShortTimeString()</td>
+            </tr>
+        </table>              
+    </div>
+    <div class="my-2">
+        <form asp-action="ClockOut" enctype="multipart/form-data">
+            <button type="submit" class="btn btn-info">Clock Out</button>
+        </form>
+    </div>
+
+}
+<div class="my-2">
+    <form asp-action="SaveClockInOut" enctype="multipart/form-data">
+        <button type="submit" class="btn btn-info">Save</button>
+    </form>
+</div>
